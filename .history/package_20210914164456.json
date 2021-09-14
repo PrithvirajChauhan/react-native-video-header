@@ -19,12 +19,7 @@
     "!ios/build",
     "!**/__tests__",
     "!**/__fixtures__",
-    "!**/__mocks__",
-    "FilterType.js",
-    "DRMType.js",
-    "TextTrackType.js",
-    "VideoResizeMode.js",
-    "react-native-video.podspec"
+    "!**/__mocks__"
   ],
   "scripts": {
     "test": "jest",

@@ -1,6 +1,6 @@
 {
   "name": "react-native-video-header",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "To play uri video with authorization",
   "main": "Video.js",
   "module": "lib/module/index",
@@ -19,12 +19,7 @@
     "!ios/build",
     "!**/__tests__",
     "!**/__fixtures__",
-    "!**/__mocks__",
-    "FilterType.js",
-    "DRMType.js",
-    "TextTrackType.js",
-    "VideoResizeMode.js",
-    "react-native-video.podspec"
+    "!**/__mocks__"
   ],
   "scripts": {
     "test": "jest",

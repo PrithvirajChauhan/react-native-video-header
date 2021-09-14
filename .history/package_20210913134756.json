@@ -1,8 +1,8 @@
 {
   "name": "react-native-video-header",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "To play uri video with authorization",
-  "main": "Video.js",
+  "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
   "react-native": "src/index",
@@ -19,12 +19,7 @@
     "!ios/build",
     "!**/__tests__",
     "!**/__fixtures__",
-    "!**/__mocks__",
-    "FilterType.js",
-    "DRMType.js",
-    "TextTrackType.js",
-    "VideoResizeMode.js",
-    "react-native-video.podspec"
+    "!**/__mocks__"
   ],
   "scripts": {
     "test": "jest",
@@ -41,7 +36,7 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/PrithvirajChauhan/react-native-video-header.git",
+  "repository": "https://github.com/PrithvirajChauhan/react-native-video-header",
   "author": "pruthvi chauhan <prithviraj.chauhan12@gmail.com> (https://github.com/PrithvirajChauhan)",
   "license": "MIT",
   "bugs": {

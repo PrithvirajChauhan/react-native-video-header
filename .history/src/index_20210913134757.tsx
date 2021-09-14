@@ -5,7 +5,8 @@ type VideoHeaderProps = {
   style: ViewStyle;
 };
 
-export const VideoHeaderViewManager =
-  requireNativeComponent<VideoHeaderProps>('VideoHeaderView');
+export const VideoHeaderViewManager = requireNativeComponent<VideoHeaderProps>(
+'VideoHeaderView'
+);
 
 export default VideoHeaderViewManager;

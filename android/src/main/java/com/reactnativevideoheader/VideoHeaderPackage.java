@@ -20,6 +20,10 @@ public class VideoHeaderPackage implements ReactPackage {
   public VideoHeaderPackage(Activity activity) {
     mActivity = activity;
   }
+
+
+  public VideoHeaderPackage() {
+  }
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
 //      List<NativeModule> modules = new ArrayList<>();
@@ -30,7 +34,7 @@ public class VideoHeaderPackage implements ReactPackage {
       return Collections.emptyList();
     }
 
-  @Override
+//  @Override
   public List<Class<? extends JavaScriptModule>> createJSModules() {
     return null;
   }
