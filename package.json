@@ -1,6 +1,6 @@
 {
   "name": "react-native-video-header",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "To play uri video with authorization",
   "main": "Video.js",
   "module": "lib/module/index",
