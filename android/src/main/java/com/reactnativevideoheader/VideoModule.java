@@ -134,9 +134,11 @@ public class VideoModule extends ScalableVideoView implements
   private int mVideoDuration = 0;
   private int mVideoBufferedDuration = 0;
   private boolean isCompleted = false;
-  public VideoModule(ThemedReactContext context) {
+  private Activity mActivity = null;
+  public VideoModule(ThemedReactContext context, Activity activity) {
     super(context);
     mThemedReactContext = context ;
+    mActivity=activity;
     context.addLifecycleEventListener(this);
     initializeMediaPlayerIfNeeded();
   }
@@ -450,12 +452,10 @@ public class VideoModule extends ScalableVideoView implements
       return; // Avoid generating events when nothing is changing
     }
     mIsFullscreen = isFullscreen;
-
-    Activity activity = mThemedReactContext.getCurrentActivity();
-    if (activity == null) {
+    if (mActivity == null) {
       return;
     }
-    Window window = activity.getWindow();
+    Window window = mActivity.getWindow();
     View decorView = window.getDecorView();
     int uiOptions;
     if (mIsFullscreen) {

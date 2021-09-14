@@ -1,5 +1,6 @@
 package com.reactnativevideoheader;
 
+import android.app.Activity;
 import android.graphics.Color;
 import android.provider.CalendarContract;
 import android.support.annotation.NonNull;
@@ -40,8 +41,12 @@ public class VideoHeaderViewManager extends SimpleViewManager<VideoModule> {
   public static final String PROP_FULLSCREEN = "fullscreen";
   public static final String PROP_PLAY_IN_BACKGROUND = "playInBackground";
   public static final String PROP_CONTROLS = "controls";
+  private Activity mActivity = null;
+  public VideoHeaderViewManager(Activity activity) {
+    mActivity = activity;
+  }
 
-    @Override
+  @Override
     @NonNull
     public String getName() {
         return REACT_CLASS;
@@ -50,7 +55,7 @@ public class VideoHeaderViewManager extends SimpleViewManager<VideoModule> {
     @Override
     @NonNull
     public VideoModule createViewInstance(ThemedReactContext reactContext) {
-      return new VideoModule(reactContext);
+      return new VideoModule(reactContext,mActivity);
     }
 
 
